@@ -31,9 +31,9 @@ node {
 	  withMaven(jdk: 'JDK_local', maven: 'MVN_Local') {
 		  sh 'mvn test -Dtest=Runner'    
 	  }
-		cucumber buildStatus: "Success",
-			fileIncludePattern: "**/cucumber.json",
-			jsonReportDirectory: 'target'
+		//cucumber buildStatus: "Success",
+		//	fileIncludePattern: "**/cucumber.json",
+		//	jsonReportDirectory: 'target'
 
   }
 	
@@ -48,7 +48,7 @@ node {
                                 //appExtId: "4b006cdb-0e50-43f2-ac87-a7586a65389e",
 				appExtId: "698c01d4-0eed-484f-8c2b-33395f8dfc46",
 				//appId: "acdfae67-616f-43e5-8872-2cfa3aa583de",    
-                                name: "Executed in JUnit - 2.0.${BUILD_NUMBER}",
+                                name: "Executed in JUnit - 1.0.${BUILD_NUMBER}",
                                 testSetName: "Junit Test Run from Jenkins"]
                            
                         ])}catch(e){
